@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ecom-data-vault"
+version = "0.1.0"
+description = ""
+authors = ["Marc-Philipp Esser <m-esser@mail.de>"]
+readme = "README.md"
+packages = [{include = "ecom_data_vault"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dbt-snowflake = "^1.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
