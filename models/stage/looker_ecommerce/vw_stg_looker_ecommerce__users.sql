@@ -1,7 +1,7 @@
 {%- set yaml_metadata -%}
 source_model: 'vw_rstg_looker_ecommerce__users'
 derived_columns:
-    DV_RECSOURCE: TO_CHAR('Looker Ecommer')
+    DV_RECSOURCE: TO_CHAR('Looker Ecommerce')
     DV_LOADTS: CURRENT_TIMESTAMP(0)
     DV_USERID: CURRENT_ACCOUNT()
 hashed_columns:
