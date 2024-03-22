@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: looker_ecommerce
+    database: date_warehouse_dev
+    schema: stage
+    tables:
+      - name: vw_stg_looker_ecommerce__events
+      - name: vw_stg_looker_ecommerce__users
