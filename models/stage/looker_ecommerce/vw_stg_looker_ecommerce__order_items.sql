@@ -5,6 +5,10 @@ derived_columns:
     DV_LOADTS: CURRENT_TIMESTAMP(0)
     DV_USERID: CURRENT_ACCOUNT()
 hashed_columns:
+    DV_HASHKEY_USER_ORDER_ITEM:
+        - 'ID'
+        - 'ORDER_ID'
+        - 'USER_ID'
     DV_HASHKEY_ORDER_ITEM: 'ID'
     DV_HASHKEY_ORDER: 'ORDER_ID'
     DV_HASHKEY_USER: 'USER_ID'
