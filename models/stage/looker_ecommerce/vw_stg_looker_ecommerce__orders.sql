@@ -10,6 +10,16 @@ hashed_columns:
         - 'USER_ID'
     DV_HASHKEY_ORDER: 'ORDER_ID'
     DV_HASHKEY_USER: 'USER_ID'
+    DV_HASHDIFF_ORDER_STATUS:
+        is_hashdiff: true
+        columns:
+            - 'ORDER_ID'
+            - 'USER_ID'
+            - 'STATUS'
+            - 'CREATED_AT'
+            - 'RETURNED_AT'
+            - 'SHIPPED_AT'
+            - 'DELIVERED_AT'
 {%- endset -%}
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
