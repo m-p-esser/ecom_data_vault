@@ -5,6 +5,9 @@ derived_columns:
     DV_LOADTS: CURRENT_TIMESTAMP(0)
     DV_USERID: CURRENT_ACCOUNT()
 hashed_columns:
+    DV_HASHKEY_USER_ORDER:
+        - 'ORDER_ID'
+        - 'USER_ID'
     DV_HASHKEY_ORDER: 'ORDER_ID'
     DV_HASHKEY_USER: 'USER_ID'
 {%- endset -%}
@@ -17,3 +20,4 @@ hashed_columns:
                      null_columns=none,
                      hashed_columns=metadata_dict['hashed_columns'],
                      ranked_columns=none) }}
+
