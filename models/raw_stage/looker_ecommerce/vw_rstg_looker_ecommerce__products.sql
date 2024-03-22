@@ -9,4 +9,4 @@ WITH source AS (SELECT ID
                      , DISTRIBUTION_CENTER_ID
                 FROM {{ source('looker_ecommerce', 'products') }})
 SELECT *
-FROM source;
+FROM source
