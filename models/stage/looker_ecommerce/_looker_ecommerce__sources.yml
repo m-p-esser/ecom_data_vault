@@ -7,4 +7,8 @@ sources:
     tables:
       - name: vw_rstg_looker_ecommerce__events
       - name: vw_rstg_looker_ecommerce__users
-
+      - name: vw_rstg_looker_ecommerce__products
+      - name: vw_rstg_looker_ecommerce__orders
+      - name: vw_rstg_looker_ecommerce__order_items
+      - name: vw_rstg_looker_ecommerce__inventory_items
+      - name: vw_rstg_looker_ecommerce__distribution_centers
